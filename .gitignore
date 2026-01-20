@@ -1,0 +1,48 @@
+# System & OS
+AppData/
+Application Data/
+Cookies/
+Local Settings/
+NTUSER*
+SendTo/
+Start Menu/
+Templates/
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env/
+
+# Conda / Anaconda
+.anaconda/
+.conda/
+.anaconda3/
+.anaconda4/
+
+# Editors & tools
+.vscode/
+.idea/
+.viminfo
+
+# Jupyter / Streamlit
+.jupyter/
+.streamlit/
+
+# Archives & misc
+*.zip
+*.log
+*.tmp
+
+# Personal files
+*.pdf
+*.docx
+
+# Node
+node_modules/
+
+# Ignore everything outside project
+../
+../../

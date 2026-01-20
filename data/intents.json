@@ -1,0 +1,109 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "yo",
+        "good morning",
+        "good evening"
+      ],
+      "responses": [
+        "Hi! I\u2019m your AI fitness coach. What do you want to focus on today \u2013 fat loss, muscle gain, or general fitness?",
+        "Hello! I can help you with workouts, diet, and motivation. What\u2019s your goal right now?"
+      ]
+    },
+    {
+      "tag": "fat_loss_workout",
+      "patterns": [
+        "fat loss workout",
+        "lose fat",
+        "reduce belly fat",
+        "weight loss exercise"
+      ],
+      "responses": [
+        "Here\u2019s a simple fat loss home routine:\\n- Jumping jacks \u2014 3 x 30 sec\\n- Squats \u2014 3 x 15\\n- Mountain climbers \u2014 3 x 20\\n- Plank \u2014 3 x 30 sec\\nDo this 3\u20134 days per week and keep your steps high."
+      ],
+      "action": "generate_daily_workout"
+    },
+    {
+      "tag": "muscle_gain_workout",
+      "patterns": [
+        "muscle gain workout",
+        "build muscle",
+        "gain size",
+        "bulk workout"
+      ],
+      "responses": [
+        "Basic muscle gain plan:\\n- Pushups \u2014 4 x 10\u201315\\n- Squats \u2014 4 x 12\u201315\\n- Dumbbell rows \u2014 4 x 10\u201312\\n- Shoulder press \u2014 3 x 10\u201312\\nTrain 4 days/week and eat in a small calorie surplus."
+      ],
+      "action": "generate_daily_workout"
+    },
+    {
+      "tag": "diet_request",
+      "patterns": [
+        "give me a diet",
+        "i want a healthy diet",
+        "food plan",
+        "meal plan",
+        "diet for fat loss",
+        "diet for muscle gain"
+      ],
+      "responses": [
+        "I can build a simple daily diet using normal, affordable foods. Do you want fat loss, muscle gain, or general health diet?"
+      ],
+      "action": "diet_general"
+    },
+    {
+      "tag": "bmi_calc",
+      "patterns": [
+        "calculate my bmi",
+        "what is my bmi",
+        "bmi"
+      ],
+      "responses": [
+        "I\u2019ll calculate your BMI from your profile. Make sure your height and weight are set on the Profile page."
+      ],
+      "action": "calculate_bmi"
+    },
+    {
+      "tag": "calorie_calc",
+      "patterns": [
+        "how many calories do i need",
+        "daily calories",
+        "calorie requirement"
+      ],
+      "responses": [
+        "I\u2019ll estimate your daily calories using your age, height, weight, and gender from your profile."
+      ],
+      "action": "calculate_calories"
+    },
+    {
+      "tag": "motivation_low",
+      "patterns": [
+        "i feel demotivated",
+        "i don't feel like working out",
+        "i lost motivation",
+        "i want to give up",
+        "i feel low"
+      ],
+      "responses": [
+        "It\u2019s okay to feel low sometimes. Start with just 10 minutes: a walk, a few squats, a few pushups. Tiny steps are still progress."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "appreciate it"
+      ],
+      "responses": [
+        "You\u2019re welcome! I\u2019m here whenever you need help.",
+        "Happy to help! Stay consistent."
+      ]
+    }
+  ]
+}
